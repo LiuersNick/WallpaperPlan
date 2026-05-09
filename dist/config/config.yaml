@@ -2,7 +2,7 @@
 # file: Excel 文件的绝对路径；
 # sheet: 需要读取的 sheet 页面的名称；
 excel:
-  file: "D:\_Files\_report\\工作计划.xlsx"
+  file: "文件路径\\每周计划.xlsx"
   sheet: "本周"
 
 
