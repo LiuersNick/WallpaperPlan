@@ -1,0 +1,32 @@
+# ====================== Excel 文件配置 ======================
+# file: Excel 文件的绝对路径；
+# sheet: 需要读取的 sheet 页面的名称；
+excel:
+  file: "D:\_Files\_report\\工作计划.xlsx"
+  sheet: "本周"
+
+
+# ======================= 输出目录配置 =======================
+# dir: 程序读取、导出、裁剪壁纸的临时目录。需要配置相对路径；
+output:
+  dir: "temp"
+
+
+# ======================= 图像处理配置 ======================
+# table_scale: 表格于壁纸中的缩放比例，可选 0.1 ~ 1.0 的缩放倍率；
+# invert_colors: 是否反转图像颜色，可选 true, false；
+# crop_threshold: 图像裁剪阈值。可选 0 ~ 255 的值，且值越低，裁剪越激进。在表格背景颜色为默认的白色的情况下，建议设置为 240 或更高的值；
+# dpi: 表格转 PNG 图像的 DPI 设置，可选 72 ~ 600，值越大越清晰；
+image:
+  table_scale: 0.9
+  invert_colors: true
+  crop_threshold: 240
+  dpi: 200
+
+
+# ======================= 程序日志配置 =======================
+# file_enable: 日志是否写入文件，可选 true, false；
+# level: 日志级别，可选 DEBUG, INFO, WARNING, ERROR, CRITICAL；
+logging:
+  file_enabled: true
+  level: "INFO"
